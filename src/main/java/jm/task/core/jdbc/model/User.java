@@ -28,6 +28,24 @@ public class User {
         this.age = age;
     }
 
+    public User(Long id, String name, String lastName, Byte age) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append(id);
+        builder.append(" ");
+        builder.append(name);
+        builder.append(" ");
+        builder.append(lastName);
+        builder.append(" ");
+        builder.append(age);
+        return builder.toString();
+    }
+
     public Long getId() {
         return id;
     }
