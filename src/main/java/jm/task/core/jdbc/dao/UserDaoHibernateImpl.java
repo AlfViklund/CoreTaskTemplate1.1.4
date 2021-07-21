@@ -51,7 +51,6 @@ public class UserDaoHibernateImpl implements UserDao {
         } catch (HibernateException ex) {
             ex.printStackTrace();
         }
-        Session session = null;
     }
 
     @Override
